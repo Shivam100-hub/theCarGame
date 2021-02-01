@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:JosefinSans;
+}
+.hide {
+	display: none;
+}
+.disp {
+	width: 35px;
+	height: 60px;
+	opacity: 0;
+}
+.carGame {
+	width: 100%;
+	height: 100vh;
+	background-image: url('../img/bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.car, .enemy {
+	border-radius: 7px;
+	width: 45px;
+	height: 70px;
+	background-image: url('../img/car.png');
+	background-size: 100% 100%;
+	position: absolute;
+	bottom: 120px;
+	}
+.lines {
+	width: 10px;
+	height: 100px;
+	background: white;
+	position: absolute;
+	margin-left: 195px;
+}
+.gameArea {
+	background: #222f3e;
+	width: 400px;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	margin: auto;
+	border-right: 7px dashed #c8d6e5;
+	border-left: 7px dashed #c8d6e5;
+}
+
+.score {
+	position: absolute;
+	top: 15px;
+	left: 40px;
+	background-color: #10ac84;
+	width: 300px;
+	line-height: 70px;
+	text-align: center;
+	color: white;
+	font-size: 1.5em;
+	box-shadow: 0 5px 5px #777;
+}
+
+.startScreen {
+	width: 45%;
+	/*height: 100px;*/
+	position: absolute;
+	background-color: #ee5253;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	z-index: 1;
+	text-align: center;
+	border: 1px solid #ff6b6b;
+	padding: 15px;
+	margin: auto;
+	user-select: none;
+	cursor: pointer;
+	font-size: 20px;
+}
+.setting {
+	width: 150px;
+	height: 80px;
+	border: 4px solid #0dade2;
+	position: absolute;
+	top: 20px;
+	right: 100px;
+	background:#00c6ff;
+}
+
+.setting:hover {
+	width: 400px;
+	height: 200px;
+	transition: all linear 0.5s; 
+	background: -webkit-linear-gradient(left , #0dade2 , #00c6ff);
+}
+
+.setting p {
+	text-align: center;
+	margin-top: 3px;
+	color: #6610f2;
+}
+
+.fa-arrow-down {
+	position: absolute;
+	top: 40%;
+	right: 50%;
+	transform: translate(-40% ,-50%);
+	color: #75369e;
+}
+
+@font-face {
+	font-family:JosefinSans;
+	src:url("../font/JosefinSans-Regular.ttf");
+}
+
+.sample {
+	border-radius: 7px;
+	width: 35px;
+	height: 60px;
+	background-image: url('../img/car.png');
+	background-size: 100% 100%;
+}
+
+.sample:hover {
+	box-shadow: 0 0 10px 10px yellow;
+	transform: scale(0.95);
+	transform: rotateZ(360deg);
+	transition: all linear 0.2s;
+}
+
+.sam {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}

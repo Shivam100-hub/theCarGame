@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Game</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+</head>
+<body>
+	<div class="carGame">
+		<div class="score"></div>
+		<div class="startScreen" >
+			<p>
+				Click here to Start <br>
+				Arrow keys to Move <br>
+				If you hit another Car, You will lose!<br> 
+				Click 'P' pause the game!
+			</p>
+		</div>
+
+		<div class="gameArea" ></div>
+		<div class="setting">
+
+			<p>Select Your Car</p>
+
+			<i class="fas fa-arrow-down" ></i>
+				
+			<div class="sam">
+				<div class="sample hide" onclick="varColor = 'red' "></div>
+				<div class="sample hide" onclick="varColor = 'green' "></div>
+				<div class="sample hide" onclick="varColor = 'yellow' "></div>
+			</div>
+			<div class="sam">
+				<div class="sample hide" onclick="varColor = 'violet' "></div>
+				<div class="sample hide" onclick="varColor = 'blue' "></div>
+				<div class="sample hide" onclick="custom() "><input type="color" class="disp" value="#ff0000" onfocus="playClor()" ></div>
+			</div>
+			
+	</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
